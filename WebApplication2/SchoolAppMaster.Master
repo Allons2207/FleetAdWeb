@@ -1,0 +1,258 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SchoolAppMaster.master.vb" Inherits="WebApplication2.SchoolAppMaster" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="ApplicationSkins/default/styles/Styles.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="SHORTCUT ICON" href="images/icons/BluFolder.ICO" />
+    <link href="ApplicationSkins/default/styles/dashboard.css" rel="stylesheet" type="text/css" />
+    <link href="ApplicationSkins/default/styles/Messages.css" rel="stylesheet" type="text/css" />
+    <link href="ApplicationSkins/default/styles/Site.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            top: 1px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                    <tr>
+                                        <td class="MainHeaderLogo"> </td><td class="MainHeaderTile"></td>
+                                        <td  class="MainHeaderTile" valign="right" style="font-weight: bolder"> 
+                                             <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnablePageMethods="true"
+                                                EnablePartialRendering="true">
+                                                <Scripts>
+                                                    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                                                    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                                                      <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
+                                                      <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
+                                                      <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
+                                                </Scripts>
+                                            </telerik:RadScriptManager> 
+
+                                            <asp:LinkButton runat="server" ID="lnkLogout" Text="Logout" Font-Size="14px" ></asp:LinkButton> </td>
+                                         </tr>
+            
+                                </table>
+           
+       <table  border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+    <tr>
+         <td>
+            
+                <table>
+    <tr>
+         <td>
+            
+                <telerik:RadMenu ID="RadMenu1" runat="server" Skin="WebBlue" CssClass="auto-style2" TabIndex="1">
+                            <Items>
+                                <telerik:RadMenuItem runat="server" Text="Vehicles">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/AllVehicles.aspx" Text="All Vehicles List">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehiclesDataDashboard.aspx" Text="Dashboard">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Fuelling">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/OdometerReadings.aspx" Text="Odometer Readings">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehiclesFuelingDetails.aspx" Text="Fueling Details">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/FuelSuppliedByMonthByType.aspx" Text="Dashboard">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Allocation">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/AllocateVehicle.aspx" Text="Allocate Vehicles to Users">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/UnAllocateVehicleFromUsers.aspx" Text="UnAllocate Vehicles">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/AllocationsList.aspx" Text="Allocations List">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Inspections">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehicleInspectionsList.aspx" Text="Inspections List">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/InspectionsDashboard.aspx" Text="Dashboard">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" NavigateUrl="~/VehicleMileageUpdatesList.aspx" Text="Mileage Updates">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Trip Logging">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/LoggedTripsList.aspx" Text="Trip Logging">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehicleAvailability.aspx" Text="Vehicle Availability">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/PoolDriversAvailability.aspx" Text="Pool Drivers Availability">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Licensing and Insurance">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/ZinaraLicensesList.aspx" Text="Zinara">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/ZBCRadioLicensingList.aspx" Text="ZBC">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/CertificatesOfFitnessList.aspx" Text="Certificate of Fitness">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/BulkLicensingList.aspx" Text="Bulk Licenses">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="VehicleInsuranceListing.aspx" Text="Insurance">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Accidents/Incidents">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/AccidentsAndIncidentsList.aspx" Text="Listing">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/AccidentsDashBoard.aspx" Text="Dashboard">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Maintenance">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehicleMaintenanceListing.aspx" Text="Listing">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/MileageToNextService.aspx" Text="Mileages To Next Service">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/DashboardVehicleMaintenance.aspx" Text="Dashboard">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Tyre Management">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" Text="Tyres in Store">
+                                            <Items>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/SearchStore.aspx" Text="Search" Value="Search Student">
+                                                </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/ViewTyresInStore.aspx" Text="View Tyres in Store">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" Text="Receive Tyres" Value="Stuff Details">
+                                            <Items>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/ReceiveTyresIntoStore.aspx" Text="Capture" Value="Capture Stuff">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" Text="Issue Tyres" Value="Scheduling" NavigateUrl="~/IssueTyres.aspx">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/tyrePrices.aspx" Text="Tyre Prices">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" Text="View Issued Tyres">
+                                            <Items>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/IssuedTyres.aspx" Text="List the Tyres">
+                                                </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/IssuedTyreTotals.aspx" Text="View Totals">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" Text="Tyre Life">
+                                            <Items>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/TyreLivesForFittedTyres.aspx" Text="Currently Fitted Tyre Lives">
+                                                </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/TyreLivesForReplacedTyres.aspx" Text="Replaced Tyre Lives">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehiclesWithoutTyresList.aspx" Text="Vehicles without Tyres List">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehicleWithTyresList.aspx" Text="Vehicle with Tyres List">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehiclesWithNumberOfFittedTyresList.aspx" Text="Vehicles with Number of Fitted Tyres List">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/TyresDashboard.aspx" Text="Dashboard">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Vehicle Users">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehicleUsersList.aspx" Text="List of Vehicle Users">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" Text="Medical Examinations" NavigateUrl="~/MedicalExamsList.aspx">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" Text="Retests" NavigateUrl="~/VehicleUsersRetestsList.aspx">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/DefensiveDriversCertificatesListing.aspx" Text="Defensive Driver's Certificates Listing">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/VehicleUsersDashboard.aspx" Text="Dashboard">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Write Offs" NavigateUrl="~/WrittenOffVehiclesList.aspx" Visible="False">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Vehicle Disposal" NavigateUrl="~/DisposedVehiclesList.aspx">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Reports" NavigateUrl="~/Reporting/Reports.aspx">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Administration" Value="Administration">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" Text="Users Management" Value="Users Management" NavigateUrl="~/ManageUsers.aspx">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/ManagingParameters.aspx" Text="Parameter Management">
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" NavigateUrl="~/CostOfMaterialsDashboard.aspx" Text="Test " Visible="False">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Surface Equipment">
+                                    <Items>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/SurfaceEquipmentList.aspx" Text="Surface Equipment List">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/SurfaceEquipmentWeeklyOperations.aspx" Text="Weekly Operations Data Entry">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" NavigateUrl="~/OperationsDataEntry.aspx" Text="Monthly Operations Data Entry">
+                                        </telerik:RadMenuItem>
+                                        <telerik:RadMenuItem runat="server" Text="Downtime by Components">
+                                            <Items>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/SurfaceEquipmentDownTimeByComponent.aspx" Text="Surface Equipment">
+                                                </telerik:RadMenuItem>
+                                                <telerik:RadMenuItem runat="server" NavigateUrl="~/VehiclesBreakdownsByComponent.aspx" Text="Vehicles">
+                                                </telerik:RadMenuItem>
+                                            </Items>
+                                        </telerik:RadMenuItem>
+                                    </Items>
+                                </telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenu>
+                    </td>
+                </tr>
+          
+           </table> 
+                    </td>
+                </tr>
+           <asp:Label runat="server" ID="lblUserName" Text ="Logged in as: " Font-Size="14px"></asp:Label>
+          
+         <tr>
+                <td v-align="top" class="auto-style1">
+                    <div class="contentbg">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+       
+        </table>
+        
+       
+    </div>
+    </form>
+</body>
+</html>

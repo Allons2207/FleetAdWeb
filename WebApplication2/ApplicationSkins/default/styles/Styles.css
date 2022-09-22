@@ -1,0 +1,741 @@
+/* Default CSS Stylesheet for a new Web Application project */
+BODY, table
+{
+	background-color: white;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+	margin: 0px;
+}
+body
+{
+	/*background-image:url('../images/bg.png'); 	background-repeat:repeat-x;	*/
+	background-color: whitesmoke;
+}
+.contentbg
+{
+	background-color: #FFFFFF;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 2px;
+	margin-bottom: 4px;
+	border: 2px solid gainsboro;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+}
+table
+{
+	background-color: transparent;
+}
+.MemberNoDisplay
+{
+	color: cornflowerblue;
+}
+.LoginTable
+{
+	background-color: transparent;
+	height: 100%;
+	margin-bottom: 0px;
+}
+.DetailsPanel
+{
+	border-right: #000099 1px solid;
+	border-top: #000099 1px solid;
+	border-left: #000099 1px solid;
+	border-bottom: #000099 1px solid;
+	background-color: #ffffff;
+}
+.LookupCommandText
+{
+	font-size: 9pt;
+	color: blue;
+}
+A:link
+{
+	text-decoration: none;
+	color: #3333cc;
+}
+
+A:visited
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+A:active
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+A:hover
+{
+	text-decoration: underline;
+	color: #3333cc;
+}
+
+PRE
+{
+	font-family: Courier New, monospace;
+}
+
+
+UL LI
+{
+	list-style-type: square;
+}
+
+UL LI LI
+{
+	list-style-type: disc;
+}
+
+UL LI LI LI
+{
+	list-style-type: circle;
+}
+
+OL LI
+{
+	list-style-type: decimal;
+}
+
+OL OL LI
+{
+	list-style-type: lower-alpha;
+}
+
+OL OL OL LI
+{
+	list-style-type: lower-roman;
+}
+input[disabled='disabled'], input[disabled]
+{
+	color: #000000;
+	background-color: WhiteSmoke;
+}
+INPUT, SELECT
+{
+	border-right: #C0C0C0 1px solid;
+	border-top: #C0C0C0 1px solid;
+	font-weight: normal;
+	font-size: 9pt;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	word-spacing: normal;
+	text-transform: none;
+	border-left: #C0C0C0 1px solid;
+	border-bottom: #C0C0C0 1px solid;
+	letter-spacing: normal;
+	padding: 1px;
+}
+TEXTAREA
+{
+	border-right: #C0C0C0 1px solid;
+	border-top: #C0C0C0 1px solid;
+	font-weight: normal;
+	font-size: 9pt;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	word-spacing: normal;
+	text-transform: none;
+	border-left: #C0C0C0 1px solid;
+	border-bottom: #C0C0C0 1px solid;
+	letter-spacing: normal;
+	padding: 1px;
+	background-color: #F4F9FF;
+}
+
+.Error, .ErrorMessage
+{
+	color: red;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 8pt;
+	width: 100%;
+}
+.ValidationSummary
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font-weight: normal;
+	font-size: 8pt;
+	border-left: dimgray 1px solid;
+	width: 100%;
+	color: red;
+	border-bottom: dimgray 1px solid;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	background-color: gainsboro;
+}
+.MenuBar
+{
+	border-right: dimgray 1px solid;
+	border-top: dimgray 1px solid;
+	font-weight: normal;
+	font-size: 8pt;
+	vertical-align: middle;
+	border-left: dimgray 1px solid;
+	width: 100%;
+	height: 20pt;
+	color: black;
+	border-bottom: dimgray 1px solid;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	background-color: gainsboro;
+}
+.PageHeading
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-weight: bold;
+	font-size: 12pt;
+	padding-bottom: 2px;
+	vertical-align: baseline;
+	text-transform: capitalize;
+	color: white;
+	padding-top: 4px;
+	border-bottom: royalblue 3px solid;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	background-color: midnightblue;
+	text-align: left;
+}
+.PageTitle
+{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-weight: normal;
+	font-size: 11pt;
+	padding-bottom: 1px;
+	vertical-align: baseline;
+	text-transform: capitalize;
+	color: midnightblue;
+	padding-top: 2px;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	text-align: left;
+}
+.HiddenControl
+{
+	display: none;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+.LoginBody
+{
+	background-color: white;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+	margin: 0px 0px 0px 0px;
+	height: 100%;
+}
+.DetailsSection
+{
+	padding-bottom: 4px;
+	padding-top: 4px;
+	color: #000099;
+	border-bottom: gainsboro 1px solid;
+	font-weight: bold;
+}
+#picker
+{
+	position: absolute; /* left:0px; */ /* top:0px; */ /*visibility:hidden*/
+}
+#filter
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+#emailpopup
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+	z-index: 1000; /* Opacity in IE */
+	filter: alpha(opacity=97); /* Opacity in Mozilla */
+	-moz-opacity: 0.97;
+}
+
+span.editlinktip
+{
+	text-decoration: none;
+	border-bottom: 1px dashed #aaa;
+}
+.SidePanel
+{
+	width: 170px;
+	height: 450px;
+	background-color: #4d689f;
+}
+
+.WhiteBG
+{
+	border: darkgray 5px solid;
+	background-color: #FFFFFF;
+}
+.cart
+{
+	padding: 2px 2px 2px 20px;
+	background: url(../images/icons/add-to-cart.gif) #ffffff no-repeat left center;
+}
+.LightGrayBG
+{
+	border-right: darkgray 1px dotted;
+	border-top: darkgray 1px dotted;
+	border-left: darkgray 1px dotted;
+	border-bottom: darkgray 1px dotted;
+	background-color: whitesmoke;
+	padding: 2px;
+}
+
+.small
+{
+	font-style: normal;
+	font-size: 0.8em;
+	line-height: 1.4em;
+	font-family: Arial,Helvetica,sans-serif;
+	color: Gray;
+}
+
+legend
+{
+	color: #637FD8;
+	font-weight: bold;
+}
+fieldset
+{
+	border: solid 1px #C0C0C0;
+}
+.module
+{
+	border-right: #C5E1DB 1px solid;
+	border-top: #027158 6px solid;
+	border-left: #C5E1DB 1px solid;
+	width: 100%;
+	border-bottom: #C5E1DB 1px solid;
+}
+.summary
+{
+	font-size: 9pt;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	background: #EBFAFF none repeat scroll 0 0;
+	border: 1px solid #CBDFE7;
+	border-top: 2px solid #CBDFE7;
+}
+.summary
+{
+	font-size: 9pt;
+	color: #484848;
+	padding: 10px;
+	margin: 0 0 5px 0;
+	text-align: left;
+}
+.notes
+{
+	font-size: 10px;
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" ,Verdana, Helvetica, sans-serif;
+	background: #EBFAFF none repeat scroll 0 0;
+	border: 1px solid #CBDFE7;
+	border-top: 2px solid #CBDFE7;
+}
+.notes
+{
+	font-size: 10px;
+	color: #484848;
+	padding: 10px;
+	margin: 0 0 5px 0;
+	text-align: left;
+}
+.notes p
+{
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+.notes span
+{
+	font-size: 9px;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+}
+.notes td
+{
+	font-size: 9px;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+}
+.submit
+{
+	background-color: #69A74E;
+	border-color: #386F24 #236013 #16540A;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	margin: 0;
+	overflow: visible;
+	padding: 2px 4px 3px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 0 #4D8835;
+}
+
+.submit:hover
+{
+	color: #ffffff;
+	background: #007236;
+}
+
+.delete
+{
+	background-color: #FFB5B5;
+	border-color: #D80047 #236013 #16540A;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	margin: 0;
+	overflow: visible;
+	padding: 2px 4px 3px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 0 #4D8835;
+}
+
+.delete:hover
+{
+	color: #ffffff;
+	background: #D80047;
+}
+
+.clear
+{
+	background-color: #96AABF;
+	border-color: #6F7F90 #236013 #16540A;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	margin: 0;
+	overflow: visible;
+	padding: 2px 4px 3px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 0 #4D8835;
+}
+
+.clear:hover
+{
+	background: #6F7F90;
+}
+
+.input:focus
+{
+	border-color: #59A3D3;
+}
+.input:hover
+{
+	border-color: #59A3D3;
+}
+
+.textarea
+{
+	margin-bottom: 6px;
+	width: 97%;
+}
+
+.input
+{
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px solid #c0c0c0;
+	margin: 1px 0;
+	padding: 1px 5px;
+}
+
+.tableheader th
+{
+	background: #F9FCFF none repeat scroll 0 0;
+	color: #85A6BA;
+	font-size: 11px;
+	font-weight: normal;
+	letter-spacing: 0.02em;
+	padding: 10px 0 9px 20px;
+	text-align: left;
+	text-transform: uppercase;
+	background-color: #7FB0CB;
+}
+
+.itemstyle td
+{
+	border-top: 1px solid #D6E2EA;
+	padding: 4px 0 5px 20px;
+	color: #466C83;
+	font-family: 'helvetica neue' ,helvetica,arial,sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	background-color: #F4FBFF;
+}
+
+.alternatingitemstyle td
+{
+	border-top: 1px solid #D6E2EA;
+	padding: 4px 0 5px 20px;
+	color: #466C83;
+	font-family: 'helvetica neue' ,helvetica,arial,sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	background-color: #FFFFFF;
+}
+
+.evtTitle, .evtTitle td
+{
+	color: #2A86B9;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	height: 24px;
+	text-align: center;
+	width: 100%;
+}
+
+.evtNextPrev, .evtNextPrev a:link, .evtNextPrev a, .evtNextPrev a:visited, .evtNextPrev a:hover
+{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 5px 0.5em 0;
+}
+
+.evtDay, .evtDay td
+{
+	border: 1px solid #CCDDEE;
+	font-family: Verdana;
+	font-size: 9px;
+	height: 70px;
+	width: 12%;
+}
+.evtDayHeader
+{
+	background-color: #7CAEC8;
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 12px;
+	height: 20px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.evtToday
+{
+	background-color: #CFE2ED;
+	font-size: 9px;
+}
+
+.evtOtherMonDay
+{
+	background-color: #F6FAFD;
+}
+.evtDay a, .evtToday a, .evtOtherMonDay a, .evtSelDay a
+{
+	display: block;
+	color: #2C8ABD;
+}
+
+input:hover, select:hover
+{
+	border-color: #92C9FF;
+}
+
+input, select
+{
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px solid #7E7E7F;
+	padding: 1px;
+}
+
+.RowMouseOver td
+{
+	background-color: lightblue !important;
+}
+.RowMouseOut
+{
+	/*this style is taken from the corresponding skin's GridRow_[SkinName] class - GridRow_Default in our case*/
+	background: #f7f7f7;
+}
+.HeaderMouseOver
+{
+	background-color: lightblue !important;
+}
+.HeaderMouseOut
+{
+	/*this style is taken from the corresponding skin's th.GridHeader class - th.GridHeader_Default in our case*/
+	background: white url( 'Img/GridHeaderBg.gif' ) repeat-x bottom;
+}
+.Icons
+{
+	padding-right: 20px;
+}
+
+.ac_input
+{
+	border: 1px solid #990000;
+	margin: 1px 0;
+	padding: 2px 5px;
+}
+
+.ac_results
+{
+	padding: 0px;
+	border: 1px solid WindowFrame;
+	background-color: Window;
+	overflow: hidden;
+}
+
+.ac_results ul
+{
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results iframe
+{
+	display: none; /*sorry for IE5*/
+	display: /**/ block; /*sorry for IE5*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: mask();
+	width: 3000px;
+	height: 3000px;
+}
+
+.ac_results li
+{
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	font: menu;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.ac_loading
+{
+	background: Window url( '../images/autoindicator.gif' ) right center no-repeat;
+}
+
+.ac_over
+{
+	background-color: Highlight;
+	color: HighlightText;
+}
+.rowover
+{
+	background-color: #FFFFFF;
+}
+
+#memberlookuppicker
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+	z-index: 1000; /* Opacity in IE */
+	filter: alpha(opacity=97); /* Opacity in Mozilla */
+	-moz-opacity: 0.97;
+}
+
+#divMemberLookup
+{
+	height: 150px;
+	font-size: 10px;
+	overflow-y: scroll;
+}
+.Funds
+{
+	padding: 0px;
+	font-size: 9px;
+}
+
+.black_overlay
+{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 200%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
+}
+
+.white_content
+{
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 55%;
+	height: 40%;
+	padding: 16px;
+	border: 6px solid #B5DBFF;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+
+.loginbox legend
+{
+	font-size: 12pt;
+	color: blue;
+	font-weight: bold;
+	border: solid 1px #CCCCCC;
+}
+
+legend
+{
+	color: #000000;
+	font-weight: bold;
+}
+.loginbox fieldset
+{
+	border: solid 1px #CCCCCC;
+	color: black;
+}
+.copyright, .loginbox fieldset a
+{
+	color: blue;
+}
+fieldset
+{
+	border: solid 1px #CCCCCC;
+}
+
+.white_contentsmall
+{
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width:25%;
+	height: 40%;
+	padding: 16px;
+	border: 6px solid #B5DBFF;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}

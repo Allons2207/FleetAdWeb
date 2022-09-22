@@ -1,0 +1,65 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Login.master.vb" Inherits="WebApplication2.Login1" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="ApplicationSkins/default/styles/Styles.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="SHORTCUT ICON" href="images/icons/BluFolder.ICO" />
+    <link href="ApplicationSkins/default/styles/dashboard.css" rel="stylesheet" type="text/css" />
+    <link href="ApplicationSkins/default/styles/Messages.css" rel="stylesheet" type="text/css" />
+    <link href="ApplicationSkins/default/styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+<body>
+     <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                    <tr>
+                                        <td class="MainHeaderLogo"> </td><td class="MainHeaderTile"></td>
+                                        <td  class="MainHeaderTile" valign="right" style="font-weight: bolder"> 
+                                             <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnablePageMethods="true"
+                                                EnablePartialRendering="true">
+                                                <Scripts>
+                                                    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                                                    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                                                      <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
+                                                      <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
+                                                      <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
+                                                </Scripts>
+                                            </telerik:RadScriptManager>  
+                                            <asp:LinkButton runat="server" ID="lnkLogout" Text="Logout" Font-Size="14px" ></asp:LinkButton> </td>
+                                         </tr>
+                                </table>
+           <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+       <table>
+           <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+       <table>
+    <tr>
+         <td>
+            
+                    </td>
+                </tr>
+          
+           </table> 
+         <tr>
+                <td style="height: 100%;" wid valign="top">
+                    <div class="contentbg">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+       
+            </table>
+        
+       
+    </div>
+    </form>
+</body>
+</html>

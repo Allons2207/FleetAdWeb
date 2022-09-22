@@ -1,0 +1,13 @@
+﻿.MainHeaderLogo
+{
+	padding: 0px 0px 0px 346px;
+	background: url(../../../images/static/MMS2007Header.jpg) #fff no-repeat left center;
+	height:80px;
+
+}
+.MainHeaderTile
+{
+	background: url(../../../images/static/MMS2007HeaderTile.jpg) #fff left center;
+	width:100%;
+}
+

@@ -1,0 +1,56 @@
+
+#cpanel {
+	padding:0 0 3px;
+	text-align:center;
+	vertical-align:middle;
+}
+#cpanel div.icon {
+margin:3px;
+}
+#cpanel {
+text-align:center;
+}
+
+a {
+color:#CFE6F2;
+text-decoration:none;
+}
+
+#cpanel div.icon img {
+margin-top:13px;
+}
+
+img {
+border:medium none;
+}
+#cpanel div.icon a:hover {
+border-style:solid;
+color:#CFE6F2;
+}
+#cpanel div.icon a {
+color:#555555;
+text-decoration:none;
+}
+
+#cpanel div.icon a:hover {
+background:#F9F9F9 none repeat scroll 0 0;
+border-color:#EEEEEE #D5D5D5 #D5D5D5 #EEEEEE;
+border-style:solid;
+border-width:1px;
+color:#3C9B4A;
+padding:3px 4px 0 6px;
+}
+
+#cpanel div.icon a {
+background:#FFFFFF none repeat scroll 0 0;
+border:1px solid #F0F0F0;
+color:#555555;
+display:block;
+float:left;
+height:97px !important;
+padding:2px 5px 1px;
+text-decoration:none;
+vertical-align:middle;
+width:108px !important;
+}
+	

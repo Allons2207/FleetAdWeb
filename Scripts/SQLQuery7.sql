@@ -1,0 +1,1 @@
+select studentId, strMonth Month, intYear Year, expectedAmt [Amount Billed],amountPaid [Amount Paid], Date [Payment Date]  from tbl_tuitionPayments where studentId = 'H15F1001HA'

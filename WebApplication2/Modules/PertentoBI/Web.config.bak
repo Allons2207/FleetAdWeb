@@ -1,0 +1,119 @@
+﻿<?xml version="1.0"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <configSections>
+    <section name="nlog" type="NLog.Config.ConfigSectionHandler, NLog"/>
+    <sectionGroup name="devExpress">
+      <section name="themes" type="DevExpress.Web.ThemesConfigurationSection, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false"/>
+      <section name="compression" type="DevExpress.Web.CompressionConfigurationSection, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false"/>
+      <section name="settings" type="DevExpress.Web.SettingsConfigurationSection, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false"/>
+      <section name="errors" type="DevExpress.Web.ErrorsConfigurationSection, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false"/>
+      <section name="resources" type="DevExpress.Web.ResourcesConfigurationSection, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false"/>
+      <section name="bootstrap" type="DevExpress.Web.Bootstrap.BootstrapConfigurationSection, DevExpress.Web.Bootstrap.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false"/>
+    </sectionGroup>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+  </configSections>
+  <!--<connectionStrings>
+    <add connectionString="Data Source=196.201.6.203\VaultITS;Initial Catalog=PrimasysZHITest2;Integrated Security=false; User ID=sa; password=@VaultITS143!;Timeout=0;" name="PertentoBI" providerName="System.Data.SqlClient"/>
+  </connectionStrings>-->
+  <!--
+    For a description of web.config changes see http://go.microsoft.com/fwlink/?LinkId=235367.
+
+    The following attributes can be set on the <httpRuntime> tag.
+      <system.Web>
+        <httpRuntime targetFramework="4.6" />
+      </system.Web>
+  -->
+  <system.web>
+    <compilation debug="true" targetFramework="4.6"/>
+    <httpHandlers>
+      <add type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" validate="false"/>
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DX.ashx" validate="false"/>
+    </httpHandlers>
+    <httpModules>
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule"/>
+    </httpModules>
+    <globalization culture="" uiCulture=""/>
+    <httpRuntime maxRequestLength="214500000" requestValidationMode="4.0" executionTimeout="110" targetFramework="4.5.1"/>
+    <pages validateRequest="false" enableEventValidation="false" viewStateEncryptionMode="Never" enableViewStateMac="false" controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID">
+      <controls>
+        <add tagPrefix="dx" namespace="DevExpress.Web" assembly="DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add tagPrefix="dx" namespace="DevExpress.Web.Bootstrap" assembly="DevExpress.Web.Bootstrap.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add tagPrefix="dx" namespace="DevExpress.DashboardWeb" assembly="DevExpress.Dashboard.v21.2.Web.WebForms, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      </controls>
+    </pages>
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false"/>
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="30000000"/>
+      </requestFiltering>
+    </security>
+    <defaultDocument>
+      <files>
+        <add value="Account/Login.aspx"/>
+      </files>
+    </defaultDocument>
+    <modules runAllManagedModulesForAllRequests="true">
+      <remove name="FormsAuthentication"/>
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule"/>
+    </modules>
+    <handlers>
+      <!--<add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DXDD.axd" name="WebDashboardHandler" preCondition="integratedMode"/>
+      -->
+      <!--<add name="ASPxUploadProgressHandler" preCondition="integratedMode" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />-->
+      <!--
+      <add name="ASPxUploadProgressHandler" preCondition="integratedMode" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>-->
+    </handlers>
+  </system.webServer>
+  <devExpress>
+    <bootstrap mode="Bootstrap4" iconSet="Embedded" allowClientObjectDeferredInitialization="false"/>
+    <resources>
+      <add type="ThirdParty"/>
+      <add type="DevExtreme"/>
+    </resources>
+    <themes enableThemesAssembly="true" styleSheetTheme="" theme="Office365" customThemeAssemblies="" baseColor="#9F47CE" font="14px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif"/>
+    <compression enableHtmlCompression="true" enableCallbackCompression="true" enableResourceCompression="true" enableResourceMerging="true"/>
+    <settings accessibilityCompliant="true" bootstrapMode="" doctypeMode="Html5" rightToLeft="false" checkReferencesToExternalScripts="true" protectControlState="true" ieCompatibilityVersion="edge"/>
+    <errors callbackErrorRedirectUrl=""/>
+  </devExpress>
+  <appSettings>
+    <add key="vs:EnableBrowserLink" value="false"/>
+    <add key="owin:AutomaticAppStartup" value="false"/>
+  </appSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Owin" publicKeyToken="31bf3856ad364e35" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Owin.Security.OAuth" publicKeyToken="31bf3856ad364e35" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Owin.Security" publicKeyToken="31bf3856ad364e35" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Owin.Security.Cookies" publicKeyToken="31bf3856ad364e35" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-12.0.0.0" newVersion="12.0.0.0"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework"/>
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer"/>
+    </providers>
+  </entityFramework>
+</configuration>

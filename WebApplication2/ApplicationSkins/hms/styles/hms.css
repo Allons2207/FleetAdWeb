@@ -1,0 +1,12 @@
+﻿.MainHeaderLogo
+{
+	padding: 0px 0px 0px 346px;
+	background: url(../../../images/static/HMS2013Header.jpg) #fff no-repeat left center;
+	height:80px;
+
+}
+.MainHeaderTile
+{
+	background: url(../../../images/static/HMS2013HeaderTile.jpg) #fff left center;
+	width:100%;
+}

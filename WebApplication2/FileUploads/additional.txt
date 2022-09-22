@@ -1,0 +1,92 @@
+
+
+
+ <LookupList>
+    <Display>1</Display>
+    <Editable>1</Editable>
+    <ListName>Assistance and Services</ListName>
+    <ListDescription>Assistance and Services</ListDescription>
+    <SelectQuery>SELECT [AssistenceAndServicesID], [Description] FROM [luAssistenceAndServicesProvided]</SelectQuery>
+    <InsertQuery>INSERT INTO [luAssistenceAndServicesProvided] ([Description]) VALUES (%3%)</InsertQuery>
+    <UpdateQuery>UPDATE [luAssistenceAndServicesProvided] SET [Description]=%3% WHERE [AssistenceAndServicesID]=%2%</UpdateQuery>
+    <DeleteQuery>DELETE FROM [luAssistenceAndServicesProvided] WHERE [AssistenceAndServicesID]=%2%</DeleteQuery>
+    <HiddenColumns>AssistenceAndServicesID</HiddenColumns>
+    <NonEditableColumns>AssistenceAndServicesID</NonEditableColumns>
+    <RequiredFields></RequiredFields>
+    <Filter>0</Filter>
+    <PermissionID>0</PermissionID>
+    <DeleteAllowed>1</DeleteAllowed>
+  </LookupList>
+
+ <LookupList>
+    <Display>1</Display>
+    <Editable>1</Editable>
+    <ListName>Nature of Problems</ListName>
+    <ListDescription>List of Nature of Problems</ListDescription>
+    <SelectQuery>SELECT [NatureOfProblemID], [Description] FROM [luNatureOfProblems]</SelectQuery>
+    <InsertQuery>INSERT INTO [luNatureOfProblems] ([Description]) VALUES (%3%)</InsertQuery>
+    <UpdateQuery>UPDATE [luNatureOfProblems] SET [Description]=%3% WHERE [NatureOfProblemID]=%2%</UpdateQuery>
+    <DeleteQuery>DELETE FROM [luNatureOfProblems] WHERE [NatureOfProblemID]=%2%</DeleteQuery>
+    <HiddenColumns>NatureOfProblemID</HiddenColumns>
+    <NonEditableColumns>NatureOfProblemID</NonEditableColumns>
+    <RequiredFields></RequiredFields>
+    <Filter>0</Filter>
+    <PermissionID>0</PermissionID>
+    <DeleteAllowed>1</DeleteAllowed>
+  </LookupList>
+
+
+ <LookupList>
+    <Display>1</Display>
+    <Editable>1</Editable>
+    <ListName>Nature of Problems</ListName>
+    <ListDescription>List of Nature of Problems</ListDescription>
+    <SelectQuery>SELECT [NatureOfProblemID], [Description] FROM [luNatureOfProblems]</SelectQuery>
+    <InsertQuery>INSERT INTO [luNatureOfProblems] ([Description]) VALUES (%3%)</InsertQuery>
+    <UpdateQuery>UPDATE [luNatureOfProblems] SET [Description]=%3% WHERE [NatureOfProblemID]=%2%</UpdateQuery>
+    <DeleteQuery>DELETE FROM [luNatureOfProblems] WHERE [NatureOfProblemID]=%2%</DeleteQuery>
+    <HiddenColumns>NatureOfProblemID</HiddenColumns>
+    <NonEditableColumns>NatureOfProblemID</NonEditableColumns>
+    <RequiredFields></RequiredFields>
+    <Filter>0</Filter>
+    <PermissionID>0</PermissionID>
+    <DeleteAllowed>1</DeleteAllowed>
+  </LookupList>
+
+
+<LookupList>
+    <Display>1</Display>
+    <Editable>1</Editable>
+    <ListName>Problems</ListName>
+    <ListDescription>List of Problems</ListDescription>
+    <SelectQuery>SELECT [ProblemID], [Description] FROM [luProblems]</SelectQuery>
+    <InsertQuery>INSERT INTO [luProblems] ([Description]) VALUES (%3%)</InsertQuery>
+    <UpdateQuery>UPDATE [luProblems] SET [Description]=%3% WHERE [ProblemID]=%2%</UpdateQuery>
+    <DeleteQuery>DELETE FROM [luProblems] WHERE [ProblemID]=%2%</DeleteQuery>
+    <HiddenColumns>ProblemID</HiddenColumns>
+    <NonEditableColumns>ProblemID</NonEditableColumns>
+    <RequiredFields></RequiredFields>
+    <Filter>0</Filter>
+    <PermissionID>0</PermissionID>
+    <DeleteAllowed>1</DeleteAllowed>
+  </LookupList>
+
+<LookupList>
+    <Display>1</Display>
+    <Editable>1</Editable>
+    <ListName>Referral Centre Types</ListName>
+    <ListDescription>List of Referral Centre Types</ListDescription>
+    <SelectQuery>SELECT [ReferralCentreTypeID], [Description] FROM [luReferralCentreTypes]</SelectQuery>
+    <InsertQuery>INSERT INTO [luReferralCentreTypes] ([Description]) VALUES (%3%)</InsertQuery>
+    <UpdateQuery>UPDATE [luReferralCentreTypes] SET [Description]=%3% WHERE [ReferralCentreTypeID]=%2%</UpdateQuery>
+    <DeleteQuery>DELETE FROM [luReferralCentreTypes] WHERE [ReferralCentreTypeID]=%2%</DeleteQuery>
+    <HiddenColumns>ReferralCentreTypeID</HiddenColumns>
+    <NonEditableColumns>ReferralCentreTypeID</NonEditableColumns>
+    <RequiredFields></RequiredFields>
+    <Filter>0</Filter>
+    <PermissionID>0</PermissionID>
+    <DeleteAllowed>1</DeleteAllowed>
+  </LookupList>
+
+
+

@@ -1,0 +1,88 @@
+﻿
+.MainHeaderLogo
+{
+    background: url(images/AA.jpg) no-repeat;
+	padding: 0px 0px 0px 496px;
+	background-color:white;
+	height:80px;
+
+}
+.MainHeaderTile
+{
+    background: url(images/tile.jpg);
+	background-color:white;
+	width:100%;
+}
+
+.msgMessage
+{
+	border: 1px solid #CCCCCC;
+	width:100%;
+	font-size: 11px;
+	text-align: left;
+	margin-bottom: 2px;
+	padding: 5px 5px 5px 30px;
+	background: url(../images/icons/alert_info_icon.gif) #e2f9e3 no-repeat left center;
+	border-color: #99CC99;
+	color: #006600;
+}
+.msgInformation
+{
+	border: 1px solid #CCCCCC;
+	width:100%;
+	font-size: 11px;
+	text-align: left;
+	margin-bottom: 2px;
+	padding: 5px 5px 5px 30px;
+	background: url(../images/icons/alert_info_icon.gif) #e2f9e3 no-repeat left center;
+	border-color: #99CC99;
+	color: #006600;
+}
+.msgWarning
+{
+	width: 100%;
+	font-size: 11px;
+	text-align: left;
+	margin-bottom: 2px;
+	padding: 5px 5px 5px 30px;
+	background: url(../images/icons/alert_warn_icon.jpg) #ffffcc no-repeat left center;
+	color: #660000;
+	border-right: #ffcc66 1px solid;
+	border-top: #ffcc66 1px solid;
+	border-left: #ffcc66 1px solid;
+	border-bottom: #ffcc66 1px solid;
+}
+.msgError
+{
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	text-align: left;
+	margin-bottom: 2px;
+	padding: 5px 5px 5px 30px;
+	border-color: #c99;
+	color: #fff;
+	background: url(../images/icons/alert_err_icon.gif) #c00 no-repeat left center;
+}
+.msgAjax
+{
+	border: 1px solid #CCCCCC;
+	width:100%;
+	font-size: 11px;
+	text-align: left;
+	margin-bottom: 2px;
+	padding: 5px 5px 5px  30px;
+	background: url(../images/icons/indicator_flower.gif) #ffffff no-repeat left center;
+	border-color: #ffffff;
+	color: #3366cc;
+}
+.msgFatal
+{
+	border: 1px solid #CCCCCC;
+	font-size: 11px;
+	text-align: left;
+	margin-bottom: 2px;
+	padding: 5px 5px 5px 30px;
+	background: url(../images/icons/alert_err_icon.gif) black no-repeat left center;
+	border-color: #ffffff;
+	color: white;
+}

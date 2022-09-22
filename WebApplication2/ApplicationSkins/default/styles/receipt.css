@@ -1,0 +1,20 @@
+﻿
+.watermark
+{
+        background: url(images/logo.jpg) no-repeat;
+        background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.receiptHeader
+}
+   text-align: center;
+   font-weight: bold;
+}	
+
+@media print {
+watermark {
+   content:url(images/logo.jpg);
+  }
+}

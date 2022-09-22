@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FleetAd", "WebApplication2\FleetAd.vbproj", "{B7D5F336-9506-4D2F-B116-583E57D334D6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Business Logic", "ClassLibrary1\Business Logic.vbproj", "{ABB9AB58-EDF6-4254-99DA-89F12C066B7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{611F2096-3E06-45EF-976D-2BFCD75E75C0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PertentoBI", "WebApplication2\Modules\PertentoBI\PertentoBI.csproj", "{DD54E213-5DB6-40F3-9810-788C3354917E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7D5F336-9506-4D2F-B116-583E57D334D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D5F336-9506-4D2F-B116-583E57D334D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D5F336-9506-4D2F-B116-583E57D334D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D5F336-9506-4D2F-B116-583E57D334D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB9AB58-EDF6-4254-99DA-89F12C066B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB9AB58-EDF6-4254-99DA-89F12C066B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB9AB58-EDF6-4254-99DA-89F12C066B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB9AB58-EDF6-4254-99DA-89F12C066B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD54E213-5DB6-40F3-9810-788C3354917E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD54E213-5DB6-40F3-9810-788C3354917E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD54E213-5DB6-40F3-9810-788C3354917E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD54E213-5DB6-40F3-9810-788C3354917E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CECEFF3A-509D-4764-B27F-340B83394A7F}
+	EndGlobalSection
+EndGlobal

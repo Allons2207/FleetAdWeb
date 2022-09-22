@@ -1,0 +1,12 @@
+﻿.MainHeaderLogo
+{
+	padding: 0px 0px 0px 352px;
+	background: url(../../../images/static/FAMSHeader.jpg) #fff no-repeat left center;
+	height:80px;
+}
+.MainHeaderTile
+{
+	background: url(../../../images/static/FAMSHeaderTile.jpg) #fff left center;
+	width:100%;
+}
+
